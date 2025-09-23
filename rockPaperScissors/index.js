@@ -47,4 +47,9 @@ function game(move){
         computerPoints2 = computerPoints2 + 1;
         computerPoints.innerHTML = computerPoints2;
     }
+    if(computerPoints2 === 5){
+        alert("Computer Won")
+    }else if(user === 5){
+        alert("You won")
+    }
 }
