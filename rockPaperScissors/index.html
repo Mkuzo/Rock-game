@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="points">
+        <div class="user-points">
+            <p id="userPoints">0</p>
+            <p>User Points</p>
+        </div>
+        <div class="computer-points">
+            <p  id="computerPoints">0</p>
+            <p>Computer Points</p>
+        </div>
+    </div>
+    <div class="images">
+        <img src="images/rock.PNG" alt="rock" onclick="game('rock')">
+        <img src="images/paper.PNG" alt="paper" onclick="game('paper')">
+        <img src="images/scissors.PNG" alt="scissors" onclick="game('scissors')">
+    </div>
+    <div id="computerChoice">
+        <h3>Computer Choice</h3>
+        <div id="computerImage">
+            <!-- <img src="images/paper.PNG" alt=""> -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
