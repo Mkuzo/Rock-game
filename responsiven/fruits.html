@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        const fruits = ["mango","banana","apple"]
+        const result = document.getElementById("result")
+        function finding(){
+            result.innerHTML = fruits[0];
+        }
+        finding();
+        const things = [{
+            name: "Mango",
+            id: 1
+        },
+        {
+            name: "Banana",
+            id: 2
+        }]
+        function finding2(){
+            result.innerHTML = things[1].name
+        }
+        finding2()
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 100%;
+            height: 70vh;
+        }
+        .wrapper img{
+            width: 100%;
+            border-radius: 10px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="" alt="" id="result">
+        <button onclick="add()">Show next</button>
+        <button onclick = "sub()">Show Back</button>
+    </div>
+    <script>
+        const result = document.getElementById("result");
+        let show = 0
+        const images = ["Cristmass.webp","image.jpg","buger.webp","pizza.webp"];
+        function display(){
+            result.src = images[show];
+        }
+        function add(){
+            if(show < images.length - 1){
+                show += 1;
+                console.log(images.length - 1 )
+                console.log(show)
+                display();
+            }
+            
+        }
+        function sub(){
+            if(show > 0){
+                show -= 1;
+                console.log(show)
+                display();
+            }
+        }
+        display();
+    </script>
+</body>
+</html>
